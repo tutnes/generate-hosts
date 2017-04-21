@@ -1,120 +1,144 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- ATTENTION - THIS IS AN AUTOMATICALLY GENERATED FILE -->
-<!-- Manual changes can cause severe problems and system instability -->
-<!-- Apply manual changes only if you have received explicit instructions from Dynatrace Support -->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <dynatrace version="6.5.12.1015">
   <hostgroups>
     <hostgroup id="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" name="Default" description="Default group for hosts not matching any other hostgroup definition." usepattern="false" isdefault="true" timeout="259200000" priority="0" minhosts="3" maxhosts="5" hostavailability="true">
-      <patterns />
+      <patterns/>
       <thresholds violations="13" samples="15">
-        <cpu idle="1" load="80" system="15" loadactive="false" />
-        <disk minfreeabsolute="1024" minfreepercentage="3" violations="1" samples="1" />
-        <memory availableabsolute="1024" availablepercentage="10" pagefaultspersecond="20" />
-        <network maxbandwidthutilization="90" />
+        <cpu idle="1" load="80" system="15" loadactive="false"/>
+        <disk minfreeabsolute="1024" minfreepercentage="3" violations="1" samples="1"/>
+        <memory availableabsolute="1024" availablepercentage="10" pagefaultspersecond="20"/>
+        <network maxbandwidthutilization="90"/>
       </thresholds>
       <processconfigs>
-        <processconfig minimum="1" maximum="2147483647" pattern="node*" name="NodeJS" />
+        <processconfig minimum="1" maximum="2147483647" pattern="node*" name="NodeJS"/>
       </processconfigs>
     </hostgroup>
   </hostgroups>
   <hosts>
     <host id="e086789f-2f3e-45c0-afd8-008b8932c897" name="139.107.169.9" description="Automatically added Host - discovered via Collector 'dtang@139.107.169.9'" address="139.107.169.9" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <label id="DT_COLLECTOR" />
-      <processconfigs />
+      <label id="DT_COLLECTOR"/>
+      <processconfigs/>
     </host>
     <host id="60158dfa-fde7-45db-ad29-0a3a2c901fbc" name="Verdens Gang" description="" address="www.vg.no" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <processconfigs />
+      <processconfigs/>
     </host>
     <host id="d5c01161-f486-483c-9b23-5d17e9cee88e" name="www.dagbladet.no" description="" address="www.dagbladet.no" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <processconfigs />
+      <processconfigs/>
     </host>
     <host id="60c20605-0fb2-465e-9054-0c054de45eeb" name="Posten Website" description="" address="posten.no" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <processconfigs />
+      <processconfigs/>
     </host>
     <host id="53ab4b0b-966a-430e-988b-cda87119a1f7" name="Balle" description="" address="Balle" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <processconfigs />
+      <processconfigs/>
     </host>
     <host id="17e3226c-0084-42c2-a103-6f98f366e4ce" name="139.107.163.219" description="Automatically added Host - discovered via Collector 'dtang@139.107.163.219'" address="139.107.163.219" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <label id="DT_COLLECTOR" />
-      <processconfigs />
+      <label id="DT_COLLECTOR"/>
+      <processconfigs/>
     </host>
     <host id="642ed66a-3f54-4556-972b-4301c68638d4" name="139.107.170.224" description="Automatically added Host - discovered via Collector 'dtang@139.107.170.224'" address="139.107.170.224" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <label id="DT_COLLECTOR" />
-      <processconfigs />
+      <label id="DT_COLLECTOR"/>
+      <processconfigs/>
     </host>
     <host id="862780b2-6233-4f78-8598-8979bf764522" name="Posten Web200" description="" address="www.bring.no" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <processconfigs />
+      <processconfigs/>
     </host>
     <host id="50df3dc1-0f43-4561-be18-5c93dbba5f28" name="en ny nettadresse" description="" address="www.slashdot.org" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <processconfigs />
+      <processconfigs/>
     </host>
     <host id="50df3dc1-0f43-4561-be18-5c93dbba5f29" name="nettadresse som er ny" description="" address="www.slas.org" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <processconfigs />
+      <processconfigs/>
     </host>
     <host id="be371df5-30b9-4df9-9eb0-b6e5c59f4492" name="12312123123," description="" address="123" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <processconfigs />
+      <processconfigs/>
     </host>
     <host id="d493c591-f6b9-425a-9050-f3ada644c57a" name="Posten Web" description="" address="www.posten.no" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <processconfigs />
+      <processconfigs/>
     </host>
     <host id="205dd3ba-38f0-4d05-b613-c549dbff5b42" name="139.107.160.197" description="Automatically added Host - discovered via Collector 'dtang@139.107.160.197'" address="139.107.160.197" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <label id="DT_COLLECTOR" />
-      <processconfigs />
+      <label id="DT_COLLECTOR"/>
+      <processconfigs/>
     </host>
     <host id="d3c2e47f-77d2-42c3-97c4-5de58991f487" name="139.107.168.90" description="Automatically added Host - discovered via Collector 'dtang@139.107.168.90'" address="139.107.168.90" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <label id="DT_COLLECTOR" />
-      <processconfigs />
+      <label id="DT_COLLECTOR"/>
+      <processconfigs/>
     </host>
     <host id="77647e24-61d7-40c5-ad34-9d06631841db" name="Posten Web Site" description="" address="my.bring.no" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <processconfigs />
+      <processconfigs/>
     </host>
     <host id="4eea233d-1a28-413a-ae11-96d5d23618f3" name="www.facebook.com" description="" address="www.facebook.com" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <processconfigs />
+      <processconfigs/>
     </host>
     <host id="9dc4d7fc-3bc2-4a5b-941f-12178bf39e8e" name="tarjei-2" description="" address="tarjei-2" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="sped-fake-001.fe.cosng.net" useprocessconfigs="true">
-      <label id="DT_SERVER" />
-      <label id="WINDOWS" />
-      <label id="DT_COLLECTOR" />
+      <label id="DT_SERVER"/>
+      <label id="WINDOWS"/>
+      <label id="DT_COLLECTOR"/>
       <processconfigs>
-        <processconfig minimum="1" maximum="2147483647" pattern="node*" name="Node JS" />
+        <processconfig minimum="1" maximum="2147483647" pattern="node*" name="Node JS"/>
       </processconfigs>
     </host>
     <host id="6d0a42d6-549d-4196-ae87-7fdf2bfd50fd" name="10.0.75.1" description="Automatically added Host - discovered via Collector 'dtang@10.0.75.1'" address="10.0.75.1" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <label id="DT_COLLECTOR" />
-      <processconfigs />
+      <label id="DT_COLLECTOR"/>
+      <processconfigs/>
     </host>
     <host id="9effbeec-a42c-4c3c-81b0-138246571e42" name="ballefrans" description="" address="balle.frans.no" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
-      <processconfigs />
+      <processconfigs/>
+    </host>
+    <host id="33b78672-e5cf-41e0-8fc1-54b50f598975" name="sadfasdf" description="" address="sadfasdf.com" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
+      <processconfigs/>
+    </host>
+    <host id="19b1788a-2ede-4e80-82c3-3a2d5358ca15" name="asdfasdfasdfsadf" description="" address="asdfasdfasdfsadf.com" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
+      <processconfigs/>
+    </host>
+    <host id="27632a7a-2e6c-4479-bfdb-0897af1826b9" name="asdfdd" description="" address="asdfdd.com" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
+      <processconfigs/>
+    </host>
+    <host id="a3a773ae-f6de-41b0-958b-0f782da11fdd" name="asdfsdfdffad" description="" address="asdfsdfdffad.com" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
+      <processconfigs/>
+    </host>
+    <host id="ccea0cdf-1734-4e30-8be0-c71d60f1fbcc" name="asdfafdssdaf" description="" address="asdfafdssdaf.com" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
+      <processconfigs/>
+    </host>
+    <host id="d09345e4-a5bc-4863-8b5f-1fe579cdcc14" name="asdfdfdsa" description="" address="asdfdfdsa.com" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
+      <processconfigs/>
+    </host>
+    <host id="662caa32-9300-4fa5-a14d-af98bda75e65" name="fadfdafdsa" description="" address="fadfdafdsa.com" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
+      <processconfigs/>
+    </host>
+    <host id="bf6d06d7-c9dd-484e-9661-ba265daf6e15" name="fdfffff" description="" address="fdfffff.com" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
+      <processconfigs/>
+    </host>
+    <host id="fd7f8fb3-6cdc-4641-8f40-aba11a1c96d7" name="ffdfdaafdsadf" description="" address="ffdfdaafdsadf.com" site="17962df8-0e9e-4301-a3c9-9af508fb5839" hostgroup="a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93" usethresholds="false" fqdn="" useprocessconfigs="false">
+      <processconfigs/>
     </host>
   </hosts>
-  <sites />
-  <labels />
+  <sites/>
+  <labels/>
   <alerts>
     <alert id="d092a87d-c5b7-400d-9fc5-95bf0444f1ed" name="Testing123" description="" cpu="true" disk="true" memory="true" network="true" type="host" selectedid="e0ee10de-b4fd-4ce5-be4f-ac61f1a8e57f" selectall="true" systemprofile="Monitoring" filterbyprofile="true" active="true" smartalert="true" monitoredprocesses="true" hostavailability="false">
       <actions>
-        <actionref severity="informational" execution="0" smartexecution="0" refaction="com.dynatrace.diagnostics.logging" smartalert="false" rolekey="com.dynatrace.diagnostics.logging" roletype="1" type="Logging Notification" key="com.dynatrace.diagnostics.logging" bundleversion="0.0.0" user="" />
+        <actionref severity="informational" execution="0" smartexecution="0" refaction="com.dynatrace.diagnostics.logging" smartalert="false" rolekey="com.dynatrace.diagnostics.logging" roletype="1" type="Logging Notification" key="com.dynatrace.diagnostics.logging" bundleversion="0.0.0" user=""/>
         <actionref severity="informational" execution="0" smartexecution="0" refaction="Create Evry Incident to Posten" smartalert="false" rolekey="com.evry.posten.action" roletype="1" type="Create Evry Incident to Posten" key="com.evry.posten" bundleversion="1.0.0" user="admin">
-          <property typeid="url" value="http://mockbin.org/bin/08f039ab-6c3f-448f-a404-cceba1b1948e/" key="hpooURL" />
-          <property typeid="list" value="300_CAP" key="assignmentGroup" />
-          <property typeid="undefined" value="Monitoring" key="systemprofile" />
-          <property typeid="string" value="supported (pono)" key="businessServiceName" />
+          <property typeid="url" value="http://mockbin.org/bin/08f039ab-6c3f-448f-a404-cceba1b1948e/" key="hpooURL"/>
+          <property typeid="list" value="300_CAP" key="assignmentGroup"/>
+          <property typeid="undefined" value="Monitoring" key="systemprofile"/>
+          <property typeid="string" value="supported (pono)" key="businessServiceName"/>
         </actionref>
       </actions>
     </alert>
   </alerts>
   <exclusions>
-    <exclusion id="d283cd4b-d166-11e4-8830-0800200c9a66" name="Exclusion of hsfs on (any)" mountpoint="*" handling="exclude" operatingsystem="(any)" filesystem="hsfs" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)" />
-    <exclusion id="d283cd47-d166-11e4-8830-0800200c9a66" name="Exclusion of /dev on Linux" mountpoint="/dev" handling="exclude" operatingsystem="linux" filesystem="(any)" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)" />
-    <exclusion id="d283cd45-d166-11e4-8830-0800200c9a66" name="Exclusion of cgroup on Linux" mountpoint="*" handling="exclude" operatingsystem="linux" filesystem="cgroup" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)" />
-    <exclusion id="d283cd49-d166-11e4-8830-0800200c9a66" name="Exclusion of udf on Linux" mountpoint="*" handling="exclude" operatingsystem="linux" filesystem="udf" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)" />
-    <exclusion id="d283cd42-d166-11e4-8830-0800200c9a66" name="Inclusion of /run on Linux" mountpoint="/run" handling="include" operatingsystem="linux" filesystem="(any)" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)" />
-    <exclusion id="d283cd40-d166-11e4-8830-0800200c9a66" name="Inclusion of /tmp on Linux" mountpoint="/tmp" handling="include" operatingsystem="linux" filesystem="(any)" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)" />
-    <exclusion id="d283cd46-d166-11e4-8830-0800200c9a66" name="Exclusion of debugfs on Linux" mountpoint="*" handling="exclude" operatingsystem="linux" filesystem="debugfs" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)" />
-    <exclusion id="d283cd4c-d166-11e4-8830-0800200c9a66" name="Exclusion of mac on Solaris" mountpoint="mac" handling="exclude" operatingsystem="solaris" filesystem="(any)" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="nic" systemprofile="(any)" />
-    <exclusion id="d283cd44-d166-11e4-8830-0800200c9a66" name="Exclusion of tmpfs on Linux" mountpoint="*" handling="exclude" operatingsystem="linux" filesystem="tmpfs" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)" />
-    <exclusion id="d283cd4a-d166-11e4-8830-0800200c9a66" name="Exclusion of cdrfs on AIX" mountpoint="*" handling="exclude" operatingsystem="aix" filesystem="cdrfs" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)" />
-    <exclusion id="d283cd48-d166-11e4-8830-0800200c9a66" name="Exclusion of iso9660 on Linux" mountpoint="*" handling="exclude" operatingsystem="linux" filesystem="iso9660" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)" />
-    <exclusion id="d283cd43-d166-11e4-8830-0800200c9a66" name="Inclusion of /var/run on Linux" mountpoint="/var/run" handling="include" operatingsystem="linux" filesystem="(any)" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)" />
-    <exclusion id="d283cd41-d166-11e4-8830-0800200c9a66" name="Inclusion of /var/tmp on Linux" mountpoint="/var/tmp" handling="include" operatingsystem="linux" filesystem="(any)" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)" />
+    <exclusion id="d283cd4b-d166-11e4-8830-0800200c9a66" name="Exclusion of hsfs on (any)" mountpoint="*" handling="exclude" operatingsystem="(any)" filesystem="hsfs" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)"/>
+    <exclusion id="d283cd47-d166-11e4-8830-0800200c9a66" name="Exclusion of /dev on Linux" mountpoint="/dev" handling="exclude" operatingsystem="linux" filesystem="(any)" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)"/>
+    <exclusion id="d283cd45-d166-11e4-8830-0800200c9a66" name="Exclusion of cgroup on Linux" mountpoint="*" handling="exclude" operatingsystem="linux" filesystem="cgroup" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)"/>
+    <exclusion id="d283cd49-d166-11e4-8830-0800200c9a66" name="Exclusion of udf on Linux" mountpoint="*" handling="exclude" operatingsystem="linux" filesystem="udf" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)"/>
+    <exclusion id="d283cd42-d166-11e4-8830-0800200c9a66" name="Inclusion of /run on Linux" mountpoint="/run" handling="include" operatingsystem="linux" filesystem="(any)" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)"/>
+    <exclusion id="d283cd40-d166-11e4-8830-0800200c9a66" name="Inclusion of /tmp on Linux" mountpoint="/tmp" handling="include" operatingsystem="linux" filesystem="(any)" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)"/>
+    <exclusion id="d283cd46-d166-11e4-8830-0800200c9a66" name="Exclusion of debugfs on Linux" mountpoint="*" handling="exclude" operatingsystem="linux" filesystem="debugfs" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)"/>
+    <exclusion id="d283cd4c-d166-11e4-8830-0800200c9a66" name="Exclusion of mac on Solaris" mountpoint="mac" handling="exclude" operatingsystem="solaris" filesystem="(any)" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="nic" systemprofile="(any)"/>
+    <exclusion id="d283cd44-d166-11e4-8830-0800200c9a66" name="Exclusion of tmpfs on Linux" mountpoint="*" handling="exclude" operatingsystem="linux" filesystem="tmpfs" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)"/>
+    <exclusion id="d283cd4a-d166-11e4-8830-0800200c9a66" name="Exclusion of cdrfs on AIX" mountpoint="*" handling="exclude" operatingsystem="aix" filesystem="cdrfs" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)"/>
+    <exclusion id="d283cd48-d166-11e4-8830-0800200c9a66" name="Exclusion of iso9660 on Linux" mountpoint="*" handling="exclude" operatingsystem="linux" filesystem="iso9660" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)"/>
+    <exclusion id="d283cd43-d166-11e4-8830-0800200c9a66" name="Inclusion of /var/run on Linux" mountpoint="/var/run" handling="include" operatingsystem="linux" filesystem="(any)" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)"/>
+    <exclusion id="d283cd41-d166-11e4-8830-0800200c9a66" name="Inclusion of /var/tmp on Linux" mountpoint="/var/tmp" handling="include" operatingsystem="linux" filesystem="(any)" hostgroup="0394b180-c89b-11e4-8830-0800200c9a66" label="a57f31a0-c89b-11e4-8830-0800200c9a66" exclusiontype="disk" systemprofile="(any)"/>
   </exclusions>
 </dynatrace>

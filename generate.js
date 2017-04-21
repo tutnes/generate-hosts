@@ -19,15 +19,15 @@ var csvList = process.argv[4];
 
 var fs = require('fs'),
     xml2js = require('xml2js');
-const uuidV1 = require('uuid/v1');
+var uuidV4 = require('uuid/v4');
 
 
-var host = { '$':
-     { id: uuidV1(),
+var hostTemplate = { '$':
+     { id: "",
        name: '',
        description: '',
        address: '',
-       site: '17962df8-0e9e-4301-a3c9-9af508fb5839',
+       site: '',
        hostgroup: 'a5e3ac7c-37ef-4e4c-b6a0-f8cae3d43e93',
        usethresholds: 'false',
        fqdn: '',
@@ -56,21 +56,27 @@ var parser = new xml2js.Parser();
 var builder = new xml2js.Builder();
 fs.readFile(__dirname + '/' + inputFile, function(err, data) {
     parser.parseString(data, function (err, result) {
-        var site = result.dynatrace.hosts[0].host[0].$.site;
-        
-
-
+        // Sets the site to the same as the first host in the inputfile
+        var site = hostTemplate.$.site = result.dynatrace.hosts[0].host[0].$.site;
+        // Finds the 
+        var hostgroup = findIdWithName(result.dynatrace.hostgroups[0].hostgroup,"Default");
         csvRaw = openFile(__dirname + '/' + csvList);
-        //console.log(csvRaw);
+        
         let csvParsed = parsedData.parse(csvRaw);
-        for (key in csvParsed) {
-            
+        
+        for (let key in csvParsed) {
+            result.dynatrace.hosts[0].host.push({ '$':
+             { id: uuidV4(),
+               name: csvParsed[key].name,
+               description: '' ,
+               address: csvParsed[key].address,
+               site: site,
+               hostgroup: hostgroup,
+               usethresholds: 'false',
+               fqdn: '',
+               useprocessconfigs: 'false' },
+            processconfigs: [ '' ] });
         }
-        
-        //var hostgroup = findIdWithName(result.dynatrace.hostgroups[0].hostgroup,hostgroupName);
-        
-        
-               
         var xml = builder.buildObject(result);
         fs.writeFile(__dirname + '/' + outputFile, xml, function(err, data) {
             if(err) {
