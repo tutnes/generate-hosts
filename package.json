@@ -1,0 +1,19 @@
+{
+  "name": "generate-hosts",
+  "version": "0.0.1",
+  "description": "Generate hosts for infrastructure.config.xml",
+  "main": "generate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/tutnes/generate-hosts"
+  },
+  "author": "Tarjei Utnes",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^3.0.1",
+    "xml2js": "^0.4.17"
+  }
+}
