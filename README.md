@@ -8,7 +8,7 @@ Installation:
 git clone the repo
 npm install
 
-Usage:
+## Usage:
 node generate.js <original xmlfile> <output xml file> <csvfile>
-Example:
+## Example:
 node generate.js infrastructure.config.original.xml infrastructure.config.xml serverlist.csv
